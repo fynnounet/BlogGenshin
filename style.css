@@ -99,9 +99,6 @@ nav {
     transform: scale(1.05);
 }
 
-/* =============================================
-   BURGER BUTTON
-============================================= */
 #burger {
     display: none;
     flex-direction: column;
@@ -132,9 +129,6 @@ nav {
     transform: translateY(-8px) rotate(-45deg);
 }
 
-/* =============================================
-   HERO LOGO
-============================================= */
 .mainLogo {
     position: absolute;
     top: 50%;
@@ -153,9 +147,6 @@ nav {
     to   { opacity: 1; transform: translate(-50%, -30%); }
 }
 
-/* =============================================
-   SECTION DESCRIPTION
-============================================= */
 section {
     background-color: rgb(255, 244, 198);
     padding: 24px 16px;
@@ -310,7 +301,6 @@ main {
     width: 30%;
     flex-shrink: 0;
     overflow: hidden;
-    opacity: 0.6;
 }
 
 .intro-image img {
@@ -327,6 +317,7 @@ main {
     justify-content: center;
     gap: 40px;
     padding: 40px 32px;
+    background-color:beige;
 }
 
 #titleArticle {
