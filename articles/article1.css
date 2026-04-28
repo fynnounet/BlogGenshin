@@ -1,0 +1,141 @@
+@font-face {
+    font-family: Genshin_Font;
+    src: url(../fonts/Genshin/genshin-impact-drip-font.ttf);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.5)),
+                url(/mainPage/img/d6c6303787.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 20vh;
+    position: relative;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.55);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    height: 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+#img_logo {
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.mainGenshin {
+    text-decoration: none;
+    color: white;
+    font-family: Genshin_Font, sans-serif;
+    font-size: clamp(16px, 2.5vw, 34px);
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    white-space: nowrap;
+}
+
+#nav-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-menu li {
+    list-style: none;
+}
+
+.navBar {
+    background-color: rgb(255, 251, 0);
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    transition: background 0.2s, transform 0.2s;
+    white-space: nowrap;
+}
+
+.navBar:hover {
+    background-color: rgb(255, 230, 0);
+    transform: scale(1.05);
+}
+
+#burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 200;
+    padding: 6px;
+}
+
+#burger span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+#burger.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+#burger.open span:nth-child(2) {
+    opacity: 0;
+}
+#burger.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+#articleTitle, #articleInfos, #articleContent, #articleContent2 {
+    color: #000;
+    line-height: 1.6;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+#articleContent p, #articleContent2 p {
+    color: #000;
+    font-size: 1rem;
+}
