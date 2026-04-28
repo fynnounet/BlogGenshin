@@ -6,7 +6,6 @@ burger.addEventListener('click', () => {
   navLinks.classList.toggle('open');
 });
 
-// Fermer en cliquant ailleurs
 document.addEventListener('click', (e) => {
   if (!burger.contains(e.target) && !navLinks.contains(e.target)) {
     burger.classList.remove('open');

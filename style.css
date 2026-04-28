@@ -21,7 +21,7 @@ h2, p {
 
 header {
     background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.5)),
-                url(/mainPage/img/d6c6303787.gif);
+                url(./img/d6c6303787.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -171,22 +171,22 @@ section {
     position: absolute;
     right: 0;
     top: 55%;
-    width: clamp(80px, 12vw, 160px);
-    height: 50%;
+    width: clamp(120px, 18vw, 280px);
+    height: auto;
     z-index: 10;
     pointer-events: none;
 }
 
-main {
-    background: url(./img/bg_1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 .partArticle {
     display: flex;
     justify-content: center;
     padding: 60px 20px;
+    text-decoration: none;
+    background: url(./img/bg_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .articlesPlace {
@@ -194,7 +194,8 @@ main {
     flex-direction: column;
     gap: 24px;
     width: 100%;
-    max-width: 700px;
+    max-width: 700px;    
+
 }
 
 #mainTheme {
@@ -225,6 +226,11 @@ main {
     cursor: pointer;
     transition: transform 0.2s, filter 0.2s;
     gap: 16px;
+    text-decoration: none;
+}
+.article-card a {
+    text-decoration: none;
+    color:white;
 }
 
 .article-card:hover {
@@ -406,7 +412,6 @@ footer {
 
 @media (max-width: 600px) {
 
-    /* Nav mobile */
     #burger {
         display: flex;
     }
