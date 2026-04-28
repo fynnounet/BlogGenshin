@@ -263,7 +263,6 @@ section {
 #article_3 { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./img/article_3.jpg) center/cover; }
 #article_4 { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./img/article_4.jpg) center/cover; }
 
-/* Bottom actions */
 .bottom-actions {
     display: flex;
     align-items: center;

@@ -140,6 +140,8 @@ nav {
     font-size: 1rem;
 }
 
+
+
 @media (max-width: 600px) {
 
     #burger {
@@ -227,4 +229,12 @@ nav {
     .note {
         border-radius: 16px;
     }
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.85);
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding: 20px 16px;
+    font-size: 13px;
 }
